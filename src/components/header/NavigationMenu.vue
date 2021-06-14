@@ -26,19 +26,60 @@
 <script>
 export default {
   name: "NavigationMenu",
+  data() {
+    return {
+      lastScroll: null,
+      navElement: null,
+    };
+  },
+  methods: {
+    handleScroll() {
+      const pageYoffset = window.top.scrollY;
+
+      if (this.lastScroll < pageYoffset) {
+        this.hide();
+      } else {
+        this.show();
+      }
+
+      this.lastScroll = pageYoffset;
+    },
+    hide() {
+      this.navElement.classList.add("hidden");
+    },
+    show() {
+      this.navElement.classList.remove("hidden");
+    },
+  },
+  created() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  mounted() {
+    this.navElement = document.querySelector(".main-navigation");
+  },
 };
 </script>
 
 <style>
 nav.main-navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   height: 6rem;
-  background: #f1eade99;
+  background: #e4e2deaa;
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
   color: #5d5246;
   font-variation-settings: "wght" 450;
+  transition: transform 0.6s;
+  z-index: 10;
+}
+
+nav.main-navigation.hidden {
+  transform: translateY(-100%);
 }
 
 nav.main-navigation .title {
