@@ -5,7 +5,9 @@
       <p>No <span class="highlight">coração</span> de Brazlândia</p>
     </div>
     <div class="button">
-      <button>Conheça <span class="arrow">➔</span></button>
+      <a href="#first-section">
+        <button>Conheça <span class="arrow">➔</span></button>
+      </a>
     </div>
     <div class="tree">
       <img src="../../assets/images/cem02-tree.png" alt="" />
@@ -83,6 +85,9 @@ button:hover {
 button .arrow {
   display: inline-block;
   transition: transform 0.3s;
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 button:hover .arrow {
