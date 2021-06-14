@@ -27,4 +27,12 @@ body {
   padding: 0;
   box-sizing: inherit;
 }
+
+p.text {
+  font-size: 1.7rem;
+  max-width: 30em;
+  line-height: 1.5;
+  margin-bottom: 2em;
+  font-variation-settings: "wght" 450;
+}
 </style>
