@@ -4,19 +4,33 @@
     <div class="nav-menu">
       <ul>
         <li>
-          <router-link to="/">Início</router-link>
+          <a href="/#top">Início</a>
         </li>
-        <li>
-          <router-link to="/">Aluno</router-link>
+        <li class="submenu">
+          <span>Informações <i class="fa fa-angle-down"></i></span>
+          <div class="submenu">
+            <ul>
+              <li>
+                <router-link to="/aluno">Área do Aluno</router-link>
+              </li>
+              <li>
+                <router-link to="/eventos">Eventos</router-link>
+              </li>
+            </ul>
+          </div>
         </li>
-        <li>
-          <router-link to="/">Eventos</router-link>
-        </li>
-        <li>
-          <router-link to="/">Sobre Nós</router-link>
-        </li>
-        <li>
-          <router-link to="/">Atendimento</router-link>
+        <li class="submenu">
+          <span>Fale Conosco <i class="fa fa-angle-down"></i></span>
+          <div class="submenu">
+            <ul>
+              <li>
+                <a href="/#atendimento">Atendimento</a>
+              </li>
+              <li>
+                <a href="/#local">Localização</a>
+              </li>
+            </ul>
+          </div>
         </li>
       </ul>
     </div>
@@ -80,6 +94,8 @@ nav.main-navigation {
 
 nav.main-navigation.hidden {
   transform: translateY(-100%);
+  visibility: hidden;
+  opacity: 0;
 }
 
 nav.main-navigation .title {
@@ -97,10 +113,56 @@ nav.main-navigation .nav-menu ul {
   height: 100%;
 }
 
+nav.main-navigation .nav-menu ul ul {
+  flex-direction: column;
+  padding-top: 1.2rem;
+  text-align: center;
+  height: unset;
+  padding-bottom: 1rem;
+  background: #e4e2debb;
+}
+
+nav.main-navigation .nav-menu ul div.submenu {
+  position: absolute;
+  top: 100%;
+  right: 0%;
+  padding-top: 1.2rem;
+  visibility: hidden;
+}
+
+nav.main-navigation .nav-menu ul li.submenu {
+  cursor: pointer;
+}
+
+li.submenu i {
+  transform: translateY(3px);
+}
+
+nav.main-navigation .nav-menu ul ul li a {
+  padding: 1rem 1.5rem;
+  transition: all 0s;
+}
+
+nav.main-navigation .nav-menu ul ul li {
+  padding: 0 2rem;
+  white-space: nowrap;
+}
+
+nav.main-navigation .nav-menu ul ul li {
+  margin: 0 1rem;
+}
+
+nav.main-navigation .nav-menu ul li.submenu:hover * {
+  visibility: visible;
+}
+
 nav.main-navigation .nav-menu ul li {
   margin: 0 1.5rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
 }
 
 nav.main-navigation .nav-menu ul li::after {
@@ -119,7 +181,8 @@ nav.main-navigation .nav-menu ul li:hover::after {
   transform: scaleX(1);
 }
 
-nav.main-navigation .nav-menu ul li a {
+nav.main-navigation .nav-menu ul li a,
+nav.main-navigation .nav-menu ul li span {
   display: inline-block;
   padding: 0.5rem 1rem;
   transition: all 0.2s;
