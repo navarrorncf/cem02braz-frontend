@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import Section from "./Section.vue";
+import Section from "../Section.vue";
 
 export default {
   name: "Location",

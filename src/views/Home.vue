@@ -37,12 +37,12 @@
 
 <script>
 // @ is an alias to /src
-import Contact from "@/components/Contact";
+import Contact from "@/components/home/Contact";
 import Header from "@/components/header/Header";
 import Footer from "@/components/Footer";
-import Location from "@/components/Location";
+import Location from "@/components/home/Location";
 import Section from "@/components/Section";
-import Values from "@/components/Values";
+import Values from "@/components/home/Values";
 
 export default {
   name: "Home",

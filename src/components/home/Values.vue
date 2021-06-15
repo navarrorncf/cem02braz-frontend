@@ -75,19 +75,19 @@ export default {
 }
 
 .cards .card.student {
-  background: url("../assets/images/student.jpg") center center / cover;
+  background: url("../../assets/images/student.jpg") center center / cover;
   /* Photo by <a href="https://unsplash.com/@linkedinsalesnavigator?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">LinkedIn Sales Solutions</a> on <a href="https://unsplash.com/s/photos/black-backpack?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
    */
 }
 
 .cards .card.staff {
-  background: url("../assets/images/staff.jpg") center center / cover;
+  background: url("../../assets/images/staff.jpg") center center / cover;
   /* Photo by <a href="https://unsplash.com/@wocintechchat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Christina @ wocintechchat.com</a> on <a href="https://unsplash.com/s/photos/professional?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
    */
 }
 
 .cards .card.management {
-  background: url("../assets/images/handshake.jpg") center left;
+  background: url("../../assets/images/handshake.jpg") center left;
   /* Photo by <a href="https://unsplash.com/@cytonn_photography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Cytonn Photography</a> on <a href="https://unsplash.com/s/photos/handshake?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
    */
 }
