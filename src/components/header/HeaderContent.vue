@@ -58,7 +58,7 @@ export default {
 }
 
 .header-content p .highlight {
-  color: #89743f;
+  color: #7c6e4c;
   font-size: 4.8rem;
   font-variation-settings: "wght" 250;
 }
@@ -67,9 +67,9 @@ button {
   animation: fade-in 1.2s cubic-bezier(0.23, 1, 0.32, 1) 2.1s backwards;
   background: transparent;
   padding: 1rem 2rem;
-  border: solid 2px #89743f;
+  border: solid 2px #7c6e4c;
   border-radius: 5px;
-  color: #89743f;
+  color: #7c6e4c;
   font-size: 2.5rem;
   font-variation-settings: "wght" 450;
   font-family: inherit;
