@@ -1,5 +1,9 @@
 <template>
-  <Section title="Atendimento" fontAwesomeIconClasses="far fa-comment-dots">
+  <Section
+    id="atendimento"
+    title="Atendimento"
+    fontAwesomeIconClasses="far fa-comment-dots"
+  >
     <div class="contact">
       <p class="text">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam nulla
