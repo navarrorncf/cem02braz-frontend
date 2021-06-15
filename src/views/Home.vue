@@ -48,18 +48,21 @@
       ipsam consectetur, similique aut id magnam? Omnis, reprehenderit dolor.
     </p>
   </Section>
+  <Footer />
 </template>
 
 <script>
 // @ is an alias to /src
 import Header from "@/components/header/Header";
 import Section from "@/components/Section";
+import Footer from "@/components/Footer";
 
 export default {
   name: "Home",
   components: {
     Header,
     Section,
+    Footer,
   },
 };
 </script>
