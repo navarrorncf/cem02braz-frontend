@@ -2,7 +2,10 @@
   <div class="footer-container">
     <footer>
       <div class="social">
-        <h3>CEM02BRAZ Nas Redes Sociais</h3>
+        <h3>
+          CEM02BRAZ &ndash; Links <i class="fas fa-external-link-alt"></i>
+        </h3>
+        <p class="text">Siga-nos nas nossas redes sociais!</p>
         <ul>
           <li>
             <a
@@ -50,11 +53,13 @@
           </li>
         </ul>
       </div>
+      <hr />
       <div class="disclaimer">
         Feito com <span class="love"><i class="fas fa-heart"></i></span> no
         Centro de Ensino Médio 02 de Brazlândia
       </div>
       <div class="copy">Brasília ‒ {{ new Date().getFullYear() }}</div>
+      <hr />
       <div class="developer">
         <p>
           Gostou desta página? Conheça o desenvolvedor
@@ -64,7 +69,7 @@
             rel="noopener noreferrer"
             >clicando aqui</a
           >
-          e faça um website para o seu negócio!
+          e peça um website para o seu negócio!
         </p>
       </div>
     </footer>
@@ -79,10 +84,10 @@ export default {
 
 <style scoped>
 .footer-container {
-  padding: 10rem 0 5rem 0;
-  background: #f5f3ef;
+  padding: 3rem 0;
+  background: #e4e2deaa;
   color: #5d5246;
-  border-top: solid 1px #5d524666;
+  border-top: solid 1px #5d524644;
 }
 
 footer {
@@ -92,8 +97,9 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* text-align: center; */
-  font-size: 1.8rem;
+  text-align: center;
+  font-size: 1.6rem;
+  font-variation-settings: "wght" 475;
 }
 
 footer > * {
@@ -104,30 +110,56 @@ footer > * {
   color: rgb(255, 72, 72);
 }
 
+.social p.text {
+  margin: 0 auto;
+}
+
+.social h3 {
+  margin-bottom: 2rem;
+}
+
 .social,
-.disclaimer,
+.developer {
+  margin: 3rem 0;
+}
+
+.disclaimer {
+  margin: 3rem 0 1rem 0;
+}
+
 .copy {
   margin-bottom: 3rem;
 }
 
-.disclaimer,
-.copy {
-  text-align: center;
+hr {
+  width: 200px;
+  border: none;
+  border-top: solid 1px #5d524666;
 }
 
 .social h3 {
   font-size: 2.8rem;
   text-transform: uppercase;
+  font-variation-settings: "wght" 500;
+  text-shadow: 0 1px 1px #5d5246;
+}
+
+.social h3 i {
+  color: #7c6e4c;
+  margin-left: 1rem;
 }
 
 .social ul {
   list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 3rem;
   font-size: 2rem;
 }
 
 .social ul li {
-  margin-top: 1.3rem;
+  margin: 0 2rem;
 }
 
 .social ul li a {
@@ -136,8 +168,9 @@ footer > * {
 }
 
 .social ul li .fab {
-  font-size: 2.4rem;
-  margin-right: 1rem;
+  font-size: 2.2rem;
+  transform: translateY(1px);
+  margin-right: 0.2rem;
 }
 
 .social ul li:hover a.facebook {
@@ -164,12 +197,12 @@ a:visited {
 
 .developer p {
   text-align: left;
-  color: #5d5246bb;
+  color: #5d5246cc;
   font-size: 1.6rem;
 }
 
 .developer a {
-  color: #89743fcc;
+  color: #7c6e4cdd;
   font-variation-settings: "wght" 600;
   text-decoration: underline;
 }
